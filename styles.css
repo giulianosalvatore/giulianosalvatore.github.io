@@ -1,0 +1,215 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgb(8,0,35);
+    
+   
+    }
+
+  
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px; /* Tamaño ajustado del título */
+}
+
+header p {
+    font-size: 16px; /* Tamaño ajustado de los párrafos */
+} 
+
+#link
+{
+
+    text-align: center;
+
+
+}
+#background {
+    position:absolute;
+    top: 38%;
+    left: 35%;
+    display:flex;
+    z-index: -1;
+}
+ 
+#content-layer1 {
+    position:absolute;
+    top: 100%;
+    left:0;width:100%;height:100%;
+    display:flex;
+}
+
+#content-layer2{
+    position:absolute;
+    top: 200%;
+    left:0;width:100%;height:100%;
+    display:flex;
+    z-index:-1;
+}
+
+#content-layer3 {
+    position:absolute;
+    top:300%;
+    left:0;width:100%;height:100%;
+    display:flex;
+}
+
+#content-layer4 {
+    position:absolute;
+    top:399%;
+    left:0%;width:90%;height:90%;
+    z-index: -1;
+}
+   
+
+#content-layer5 {
+    position:absolute;
+    top:495%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+}
+    
+#content-layer6 {
+    position:absolute;
+    top:595%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+
+#content-layer7 {
+    position:absolute;
+    top:695%;
+    left:0%;width:100%;height:99%;
+    display:flex;
+    }
+
+#content-layer8 {
+    position:absolute;
+    top:791%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+
+
+/*#superposicion {
+    position: absolute;
+    top: 617%; /* Ajusta la posición para que se superponga correctamente
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Asegura que esta imagen esté encima de la capa3
+    display: flex;
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor
+    height: auto;
+}*/
+
+
+.responsive-video {
+    width: 110%; /* Ocupará el 80% del ancho de la pantalla */
+     height: auto; 
+}
+
+
+
+/* Estilos generales para el contenedor del slider */
+.slider-container {
+    position: absolute;
+    top:890%;
+    width: 100%;
+    left:0%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: ; /* Espacio superior opcional para separar el video */
+}
+
+/* Estilos del contenedor donde estarán las imágenes del slider */
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Estilos de las imágenes del slider */
+.slide {
+    min-width: 100%; /* Cada imagen ocupará el 100% del contenedor */
+    height: auto;
+}
+
+/* Estilos de los botones de control (flechas) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 10; /* Asegura que las flechas estén encima de todo */
+}
+
+/* Flecha izquierda */
+.prev {
+    left: 0;
+}
+
+/* Flecha derecha */
+.next {
+    right: 0;
+}
+
+/* Efecto hover en las flechas */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content-layer9 {
+    position:absolute;
+    top:952%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+#content-layer10 {
+    position:absolute;
+    top:1052%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+
+#content-layer11 {
+    position:absolute;
+    top:1152%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+
+#content-layer12 {
+    position:absolute;
+    top:1252%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+#content-layer13 {
+    position:absolute;
+    top:1352%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+#content-layer14{
+    position:absolute;
+    top:1452%;
+    left:0%;width:100%;height:100%;
+    display:flex;
+    }
+
+
+
+
+

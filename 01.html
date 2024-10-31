@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title> IF YOU ARRIVE HERE, YOU MIGHT BE LOST. </title>
+	<script src="./p5.js"></script>
+	<script src="fuego.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleccionar el video por su id
+        const video = document.getElementById('myVideo');
+
+        // Crear el observador
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Si el video entra en la vista, reproduce
+                    video.play();
+                } else {
+                    // Si sale de la vista, pausa el video
+                    video.pause();
+                }
+            });
+        }, {
+            threshold: 0.5 // Se activa cuando el 50% del video es visible
+        });
+
+        // Observar el video
+        observer.observe(video);
+    });
+</script>
+
+<script>
+    let slideIndex = 0; // Índice de la imagen actual
+
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.slide'); // Seleccionar las imágenes
+        const slider = document.querySelector('.slider'); // Seleccionar el contenedor del slider
+        const totalSlides = slides.length; // Número total de imágenes
+
+        // Actualizar el índice de la imagen actual
+        slideIndex += direction;
+
+        // Si se alcanza el final, vuelve al principio o al final dependiendo de la dirección
+        if (slideIndex >= totalSlides) {
+            slideIndex = 0; // Vuelve a la primera imagen
+        }
+        if (slideIndex < 0) {
+            slideIndex = totalSlides - 1; // Vuelve a la última imagen
+        }
+
+        // Desplazar el contenedor para mostrar la imagen correspondiente
+        slider.style.transform = `translateX(${-slideIndex * 100}%)`;
+    }
+</script>
+
+
+</head>
+
+<body>
+	<header>
+      <h1>IF YOU HAVE ARRIVE HERE, YOU MIGHT BE LOST
+      	<p> 
+      	I'M AFRAID I CAN'T HELP YOU IN YOUR ENDEAVOR. </p>
+		<p>HOWEVER, TAKE A LOOK AT MY WORK, MAYBE YOU CAN FIND SOME INSPIRATION.</p><h1>
+	
+       
+    </header>
+	<div id="link"> 
+		<a href="index.html"> XV0010XY </a>
+		<p> 
+		<a href="leavingbeings.html"> 000000</a></p>
+	</div>
+
+	<div id="background">	
+		<img src="imgs/taneg.png" alt="Image2">
+	</div>
+
+	<div id="content-layer1">
+      	<img src="imgs/portafolio.png" alt="Image3">
+    	<!--<img src="image1.png" alt="Image 2">
+    	 <img src="image4.png" alt="Image 2">
+    	 <img src="image1.gif" alt="Image 3">-->			  
+    </div>
+    <div id="content-layer2">
+      	<img src="imgs/final2.png" alt="Image3">			  
+    </div>
+	<div id="content-layer3">
+		<img src="imgs/final3.png" alt="Image4">
+	</div>
+	
+	<div id="content-layer4">
+		<video controls class="responsive-video" id=myVideo>
+		  <source src="imgs/tatam.m4v" type="video/mp4">
+		</video>
+	
+	</div>
+
+	<div id="content-layer5"> 
+		<img src="imgs/final4.png" alt="Image5">
+	</div>
+
+	<div id="content-layer6"> 
+		<img src="imgs/final5.png" alt="Image5">
+	</div>
+
+	<div id="content-layer7"> 
+		<img src="imgs/noborders.png" alt="Image5">
+	</div>
+
+	<div id="content-layer8"> 
+		<img src="imgs/PAR.png" alt="Image5">
+	</div>
+
+	<div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Flecha izquierda -->
+        
+        <div class="slider">
+            <img src="imgs/dmweb.png" class="slide">
+            <img src="imgs/dmweb2.png" class="slide">
+            <img src="imgs/dmweb3.png" class="slide">
+            <img src="imgs/dmweb4.png" class="slide">
+        </div>
+        
+        <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Flecha derecha -->
+    </div>
+
+	<div id="content-layer9"> 
+		<img src="imgs/revista.png" alt="Revista-tiempo">
+	</div>
+
+	<div id="content-layer10"> 
+		<img src="imgs/final10.png" alt="afiche-suenos">
+	</div>
+	<div id="content-layer11"> 
+		<img src="imgs/final11.png" alt="11">
+	</div>
+	
+	<div id="content-layer12"> 
+		<img src="imgs/final12.png" alt="12">
+	</div>
+
+	<div id="content-layer13"> 
+		<img src="imgs/final13.png" alt="13">
+	</div>
+
+	<div id="content-layer14"> 
+		<img src="imgs/final14.png" alt="afiche-suenos">
+	</div>
+	
+	<!--<div id="superposicion">
+    	<img src="imgs/IMG_1354.jpeg" alt="Imagen superpuesta">
+	</div>
+
+	<div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Flecha izquierda
+        
+        <div class="slider">
+            <img src="imgs/dmweb.png" class="slide">
+            <img src="imgs/dmweb2.png" class="slide">
+            <img src="imgs/dmweb3.png" class="slide">
+            <img src="imgs/dmweb4.png" class="slide">
+        </div>
+        
+        <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Flecha derecha -->
+   
+
+		
+</body>
+</html>
